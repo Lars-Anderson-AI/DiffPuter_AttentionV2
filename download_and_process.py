@@ -7,7 +7,7 @@ import zipfile
 import json
 from generate_mask import generate_mask
 
-DATA_DIR = '/kaggle/working/DiffPuter_AttentionV1/datasets'
+DATA_DIR = '/kaggle/working/DiffPuter_AttentionV2/datasets'
 
 
 NAME_URL_DICT_UCI = {
