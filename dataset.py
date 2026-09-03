@@ -5,11 +5,11 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 import os
 import json
 
-DATA_DIR = '/kaggle/working/DiffPuter_AttentionV1/datasets'
+DATA_DIR = '/kaggle/working/DiffPuter_AttentionV2/datasets'
 
 def load_dataset(dataname, idx = 0, mask_type = 'MCAR', ratio = '30'):
-    data_dir = f'/kaggle/working/DiffPuter_AttentionV1/datasets/{dataname}'
-    info_path = f'/kaggle/working/DiffPuter_AttentionV1/datasets/Info/{dataname}.json'
+    data_dir = f'/kaggle/working/DiffPuter_AttentionV2/datasets/{dataname}'
+    info_path = f'/kaggle/working/DiffPuter_AttentionV2/datasets/Info/{dataname}.json'
 
     with open(info_path, 'r') as f:
         info = json.load(f)
