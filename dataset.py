@@ -172,9 +172,9 @@ from sklearn.metrics import accuracy_score, f1_score
 
 def get_eval(dataname, X_recon, X_true, truth_cat_idx, num_num, cat_bin_num, mask, oos = False):
 
-    data_dir = f'/kaggle/working/DiffPuter_AttentionV1/datasets/{dataname}'
+    data_dir = f'/kaggle/working/DiffPuter_AttentionV2/datasets/{dataname}'
 
-    info_path = f'/kaggle/working/DiffPuter_AttentionV1/datasets/Info/{dataname}.json'
+    info_path = f'/kaggle/working/DiffPuter_AttentionV2/datasets/Info/{dataname}.json'
 
     with open(info_path, 'r') as f:
         info = json.load(f)
