@@ -47,12 +47,14 @@ def process_california():
     print('Start processing dataset california from sklearn.')
     save_dir = f'{DATA_DIR}/california'
     os.makedirs(save_dir, exist_ok=True)
-    
-    # Mengambil California Housing Dataset (20,640 baris, 9 kolom numerik)
-    california = fetch_california_housing(as_frame=True)
-    data_df = california.frame # Terdiri dari 8 fitur + 1 target (MedHouseVal)
-    
+
     save_path = f'{save_dir}/data.csv'
+    if os.path.exists(save_path):
+        print('california already processed.')
+        return
+
+    california = fetch_california_housing(as_frame=True)
+    data_df = california.frame  # shape: (20640, 9)
     data_df.to_csv(save_path, index=False)
     print(f'Finish processing california. Saved to {save_path}')
 # =====================================================================
