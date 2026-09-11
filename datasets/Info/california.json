@@ -1,9 +1,9 @@
 {
-    "name": "caliornia",
+    "name": "california",
     "header": null,
-    "num_col_idx": [0,1,2,3,4,5,6,7,8],
+    "num_col_idx": [0,1,2,3,4,5,6,7],
     "cat_col_idx": [],
     "target_col_idx": [
-        9
+        8
     ]
 }
